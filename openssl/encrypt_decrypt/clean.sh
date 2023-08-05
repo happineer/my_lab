@@ -1,5 +1,5 @@
 #!/bin/bash -ex
 
-rm -rf *.txt *.key
+rm -rf *.txt *.key *.bin
 
 
