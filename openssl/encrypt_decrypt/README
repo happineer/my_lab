@@ -1,0 +1,25 @@
+
+[0] create a pair of keys (private key, public key pair)
+$ ./create_keys.sh
+
+
+[1] prepare an original text file
+$ echo "hello, world" > orig.txt
+
+
+[2] encrypt the original file
+$ ./encrypt_file.sh orig.txt
+
+then `enc_out.txt` will be created. you can't see the original text in this file.
+
+
+[3] decrypt the encrypted file so that you can see the original text
+$ ./decrypt_file.sh enc_out.txt
+
+then, `dec_out.txt` will be created. this file has exactly same data wtih the original file(orig.txt)
+
+
+[4] clear all immediate files
+$ ./clean.sh
+
+then, *.txt, *.key files will be deleted
